@@ -13,7 +13,7 @@ export interface NotifyOptions {
 }
 
 export type NotificationType = 'success' | 'error';
-interface NotificationPosition {
+export interface NotificationPosition {
   bottom?: number;
   right?: number;
   top?: number;
