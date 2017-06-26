@@ -45,3 +45,7 @@ notify.error('not cool beans', {
   }
 }
 ```
+
+## Demo
+
+http://notify.tsmean.com/
