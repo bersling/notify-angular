@@ -1,0 +1,24 @@
+{
+  "name": "notify-angular2",
+  "version": "1.0.0",
+  "description": "Simple yet customizable pop-up notifications for Angular2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bersling/notify-angular2.git"
+  },
+  "keywords": [
+    "Angular",
+    "Angular2",
+    "Notifications"
+  ],
+  "author": "bersling@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bersling/notify-angular2/issues"
+  },
+  "homepage": "https://github.com/bersling/notify-angular2#readme"
+}

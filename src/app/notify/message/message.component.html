@@ -1,0 +1,15 @@
+<div class="notification-wrapper"
+     *ngIf="notification"
+     [style.bottom]="notification.position.bottom"
+     [style.top]="notification.position.top"
+     [style.right]="notification.position.right"
+     [style.left]="notification.position.left"
+     (click)="removeNotification()">
+    <div class="notification"
+         [class.hidden]="hidden"
+         [style.background]="notification.background"
+         [style.color]="notification.color" >
+      {{notification.message}}
+  </div>
+</div>
+

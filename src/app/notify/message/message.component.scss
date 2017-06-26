@@ -1,0 +1,15 @@
+.notification-wrapper {
+    position:fixed;
+    padding: 20px;
+    z-index: 10000;
+}
+
+.notification {
+  padding: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
