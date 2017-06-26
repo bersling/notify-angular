@@ -7,11 +7,11 @@ import 'rxjs/add/operator/takeUntil';
 import 'rxjs/add/observable/timer';
 
 @Component({
-  selector: 'notify-message',
-  templateUrl: './message.component.html',
-  styleUrls: ['./message.component.scss']
+  selector: 'notify',
+  templateUrl: './notify.component.html',
+  styleUrls: ['./notify.component.scss']
 })
-export class MessageComponent implements OnInit, OnDestroy {
+export class NotifyComponent implements OnInit, OnDestroy {
 
   public notification: AppNotification;
 
