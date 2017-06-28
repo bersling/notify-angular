@@ -14,30 +14,33 @@ export class NotifyService {
 
   constructor() {}
 
-  success(message, options?: NotifyOptions) {
-    this._notifications.next({
-      type: 'success',
+  defaultNotificationFactory (message, options?: NotifyOptions): AppNotification {
+    const notification: AppNotification = {
       message: message,
-      color: options && options.color || '#3C763D',
-      background: options && options.background || '#DFF0D8',
-      timer: options && options.timer || 1500,
-      transition: '1.5s',
-      opacity: '1',
-      position: options && options.position || DEFAULT_POSITION
-    });
+      withShadow: options && options.withShadow !== undefined ? options.withShadow : true,
+      styles: {
+        position: options && options.styles && options.styles.position || DEFAULT_POSITION,
+      },
+    };
+    return notification
+  }
+
+  success(message, options?: NotifyOptions) {
+    const notification = this.defaultNotificationFactory(message, options);
+    notification.type = 'success';
+    notification.styles.color =  options && options.styles && options.styles.color || '#3C763D';
+    notification.styles.background = options && options.styles && options.styles.background || '#DFF0D8';
+    notification.timer = options && options.timer || 1500;
+    this._notifications.next(notification);
   }
 
   error(message, options?: NotifyOptions) {
-    this._notifications.next({
-      type: 'error',
-      message: message,
-      color: options && options.color || '#A94442',
-      background: options && options.background || '#F2DEDE',
-      timer: options && options.timer || 3000,
-      transition: '3s',
-      opacity: '1',
-      position: options && options.position || DEFAULT_POSITION
-    });
+    const notification = this.defaultNotificationFactory(message, options);
+    notification.type = 'error';
+    notification.styles.color =  options && options.styles && options.styles.color || '#A94442';
+    notification.styles.background = options && options.styles && options.styles.background || '#F2DEDE';
+    notification.timer = options && options.timer || 3000;
+    this._notifications.next(notification);
   }
 
   public get notifications() { // TODO: make this const somehow. static?

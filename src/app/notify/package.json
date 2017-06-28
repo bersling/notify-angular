@@ -1,6 +1,6 @@
 {
   "name": "notify-angular2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple yet customizable pop-up notifications for Angular2",
   "main": "index.js",
   "scripts": {

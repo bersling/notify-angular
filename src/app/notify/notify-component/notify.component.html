@@ -1,15 +1,17 @@
 <div class="notification-wrapper"
      *ngIf="notification"
-     [style.bottom]="notification.position.bottom"
-     [style.top]="notification.position.top"
-     [style.right]="notification.position.right"
-     [style.left]="notification.position.left"
+     [style.bottom]="notification.styles.position.bottom"
+     [style.top]="notification.styles.position.top"
+     [style.right]="notification.styles.position.right"
+     [style.left]="notification.styles.position.left"
      (click)="removeNotification()">
     <div class="notification"
          [class.hidden]="hidden"
-         [style.background]="notification.background"
-         [style.color]="notification.color" >
+         [style.color]="notification.styles.color"
+         [style.background]="notification.styles.background"
+         [ngClass]="{'with-shadow': notification.withShadow}">
       {{notification.message}}
   </div>
+  
 </div>
 

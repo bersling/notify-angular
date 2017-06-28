@@ -18,6 +18,7 @@ export class AppComponent {
     bottom: 0,
     right: 0
   };
+  withShadow = true;
 
   constructor(
     private notifyService: NotifyService
@@ -25,10 +26,13 @@ export class AppComponent {
 
   notify(type?: string) {
     const options: AppNotification = {
-      color: this.color,
+      styles: {
+        color: this.color,
+        background: this.background,
+        position: this.position,
+      },
       timer: this.timer,
-      background: this.background,
-      position: this.position
+      withShadow: this.withShadow
     };
 
     if (type === 'error') {
