@@ -10,27 +10,32 @@ import {AppNotification, NotificationPosition, NotifyOptions} from './notify/not
 })
 export class AppComponent {
 
+  message = 'Hello World';
   color: string;
   background: string;
   timer: number;
   position: NotificationPosition = {
-
-  }
+    bottom: 0,
+    right: 0
+  };
 
   constructor(
     private notifyService: NotifyService
   ) { }
 
-  notify() {
-    console.log(this.position);
+  notify(type: string) {
     const options: AppNotification = {
       color: this.color,
       timer: this.timer,
       background: this.background,
       position: this.position
-    }
+    };
 
-    this.notifyService.success('Hello World', options);
+    if (type === 'error') {
+      this.notifyService.error(this.message, options);
+    } else {
+      this.notifyService.success(this.message, options);
+    }
   }
 
 }
