@@ -37,7 +37,7 @@ export class NotifyComponent implements OnInit, OnDestroy {
       if (this.removalSubscription) {
         this.removalSubscription.unsubscribe();
       }
-      this.removalSubscription = Observable.of(42)
+      this.removalSubscription = Observable.of(null)
         .delay(notification.timer)
         .subscribe(() => {
           this.removeNotification();
