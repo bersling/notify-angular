@@ -6,11 +6,9 @@ export interface AppNotification extends NotifyOptions {
 export interface NotifyOptions {
   timer?: number; // in milliseconds
   withShadow?: boolean;
-  styles: {
-    color?: string; // css color property
-    background?: string; // css background property
-    position?: NotificationPosition;
-  }
+  color?: string; // css color property
+  background?: string; // css background property
+  position?: NotificationPosition;
 }
 
 export type NotificationType = 'success' | 'error';

@@ -18,9 +18,7 @@ export class NotifyService {
     const notification: AppNotification = {
       message: message,
       withShadow: options && options.withShadow !== undefined ? options.withShadow : true,
-      styles: {
-        position: options && options.styles && options.styles.position || DEFAULT_POSITION,
-      },
+      position: options && options.position || DEFAULT_POSITION
     };
     return notification
   }
@@ -28,8 +26,8 @@ export class NotifyService {
   success(message, options?: NotifyOptions) {
     const notification = this.defaultNotificationFactory(message, options);
     notification.type = 'success';
-    notification.styles.color =  options && options.styles && options.styles.color || '#3C763D';
-    notification.styles.background = options && options.styles && options.styles.background || '#DFF0D8';
+    notification.color =  options && options.color || '#3C763D';
+    notification.background = options && options.background || '#DFF0D8';
     notification.timer = options && options.timer || 1500;
     this._notifications.next(notification);
   }
@@ -37,8 +35,8 @@ export class NotifyService {
   error(message, options?: NotifyOptions) {
     const notification = this.defaultNotificationFactory(message, options);
     notification.type = 'error';
-    notification.styles.color =  options && options.styles && options.styles.color || '#A94442';
-    notification.styles.background = options && options.styles && options.styles.background || '#F2DEDE';
+    notification.color =  options && options.color || '#A94442';
+    notification.background = options && options.background || '#F2DEDE';
     notification.timer = options && options.timer || 3000;
     this._notifications.next(notification);
   }
