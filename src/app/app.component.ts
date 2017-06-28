@@ -23,7 +23,7 @@ export class AppComponent {
     private notifyService: NotifyService
   ) { }
 
-  notify(type: string) {
+  notify(type?: string) {
     const options: AppNotification = {
       color: this.color,
       timer: this.timer,
