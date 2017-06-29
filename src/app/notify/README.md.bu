@@ -8,7 +8,7 @@ but is still independent from the material design library!
 
 ## Demo
 
-![notify-angular library demo](http://notify.tsmean.com/notify-angular2.gif)
+![notify-angular2 library demo](http://notify.tsmean.com/notify-angular2.gif)
 
 
 **Live Demo: http://notify.tsmean.com/**
@@ -17,7 +17,7 @@ but is still independent from the material design library!
 ## Installation
 
 ```
-npm install notify-angular
+npm install notify-angular2
 ```
 
 Import in your app.module:
