@@ -55,3 +55,6 @@ notify.error('not cool beans', {
 }
 ```
 
+## Comments
+
+Semver is strictly followed. Now have fun with the library!
