@@ -1,3 +1,11 @@
+## Demo
+
+![notify-angular2 library demo](http://notify.tsmean.com/notify-angular2.gif)
+
+
+**Live Demo: http://notify.tsmean.com/**
+
+
 ## Installation
 
 ```
@@ -39,6 +47,7 @@ notify.error('not cool beans', {
   withShadow: false,
   color: green,
   background: red,
+  timer: 500,
   position: {
     top: 0;
     right: 0;
@@ -46,6 +55,3 @@ notify.error('not cool beans', {
 }
 ```
 
-## Demo
-
-http://notify.tsmean.com/
