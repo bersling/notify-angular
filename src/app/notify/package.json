@@ -1,14 +1,14 @@
 {
-  "name": "notify-angular2",
-  "version": "3.0.3",
-  "description": "Simple yet customizable notifications for Angular2, well suited in combination with Material Design",
+  "name": "notify-angular",
+  "version": "1.0.0",
+  "description": "Simple yet customizable notifications for Angular2+, well suited in combination with Material Design",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bersling/notify-angular2.git"
+    "url": "git+https://github.com/bersling/notify-angular.git"
   },
   "keywords": [
     "Angular",
@@ -21,7 +21,7 @@
   "author": "bersling@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bersling/notify-angular2/issues"
+    "url": "https://github.com/bersling/notify-angular/issues"
   },
-  "homepage": "https://github.com/bersling/notify-angular2#readme"
+  "homepage": "https://github.com/bersling/notify-angular#readme"
 }
