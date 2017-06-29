@@ -1,4 +1,3 @@
-
 Simple, yet flexible notifications for **Angular2+**.
 Why yet another notification library?
 I found them either too complex or too simplistic and strive for a good balance here.
@@ -66,3 +65,4 @@ notify.error('not cool beans', {
 ## Comments
 
 Semver is strictly followed. Now have fun with the library!
+
