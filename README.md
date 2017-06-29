@@ -1,5 +1,8 @@
 # NotifyAngular2
 
+![notify-angular2 library demo](http://notify.tsmean.com/notify-angular2.gif)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
 
 ## Development server

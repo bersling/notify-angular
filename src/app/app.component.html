@@ -1,6 +1,6 @@
 <!--The whole content below can be removed with the new code.-->
 <notify></notify>
-<main style="max-width: 700px; margin: 0 auto;">
+<main style="max-width: 700px; margin: 0 auto; padding: 50px 0;">
   
   <md-card>
     <h1>
@@ -10,9 +10,9 @@
   <md-card>
     <p>
       Simple, yet flexible notifications for Angular2. Why yet another notification library?
-      I found them either too complex or too simplistic and hope to find a better balance here.
-      Additionally, it fits in well with <b>Angular Material Design</b> but is still independent from the
-      material design library Angular Material Design Library.
+      I found them either too complex or too simplistic and strive for a good balance here.
+      Additionally, it fits in well with <b>Angular Material Design</b>, but is still independent from the
+      material design library!
     </p>
   </md-card>
   
@@ -81,8 +81,8 @@
       Finally, generate the notification!
     </p>
     
-    <button md-raised-button color="primary" (click)="notify()"> Click to generate success notification </button>
-    <button md-raised-button color="accent" (click)="notify('error')"> Click to generate error notification </button>
+    <button style="margin:5px;" md-raised-button color="primary" (click)="notify()"> Generate success notification </button>
+    <button style="margin:5px;" md-raised-button color="accent" (click)="notify('error')"> Generate error notification </button>
     
   </md-card>
 
