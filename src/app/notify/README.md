@@ -1,5 +1,5 @@
 
-Simple, yet flexible notifications for Angular.
+Simple, yet flexible notifications for Angular2+.
 Why yet another notification library?
 I found them either too complex or too simplistic and strive for a good balance here.
 Additionally, it fits in well with Angular Material Design,
