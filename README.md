@@ -1,6 +1,6 @@
-# NotifyAngular2
+# notify-angular
 
-![notify-angular2 library demo](http://notify.tsmean.com/notify-angular2.gif)
+![notify-angular library demo](http://notify.tsmean.com/notify-angular2.gif)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
@@ -37,7 +37,7 @@ Before deploying, make sure you have the following setup:
 ```
 server {
   server_name notify.tsmean.com;
-  root /home/ubuntu/notify-angular2;
+  root /home/ubuntu/notify-angular;
   location / {
   }
 }
