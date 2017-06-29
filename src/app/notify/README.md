@@ -1,10 +1,9 @@
 
-Simple, yet flexible notifications for Angular2+.
+Simple, yet flexible notifications for **Angular2+**.
 Why yet another notification library?
 I found them either too complex or too simplistic and strive for a good balance here.
 Additionally, it fits in well with Angular Material Design,
 but is still independent from the material design library!
-**Works with all releases of Angular greater than version 2.**
 
 
 ## Demo
