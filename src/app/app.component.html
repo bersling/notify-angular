@@ -1,47 +1,91 @@
 <!--The whole content below can be removed with the new code.-->
 <notify></notify>
+<main style="max-width: 700px; margin: 0 auto;">
+  
+  <md-card>
+    <h1>
+      notifiy-angular2
+    </h1>
+  </md-card>
+  <md-card>
+    <p>
+      Simple, yet flexible notifications for Angular2. Why yet another notification library?
+      I found them either too complex or too simplistic and hope to find a better balance here.
+      Additionally, it fits in well with <b>Angular Material Design</b> but is still independent from the
+      material design library Angular Material Design Library.
+    </p>
+  </md-card>
+  
+  <md-card>
+  
+    <p>
+      Simply choose a message to be displayed. The timer (aka delay) determines how long the message
+      will stay on screen.
+    </p>
+    
+    <md-input-container class="full-width">
+      <input mdInput [(ngModel)]="message" placeholder="Notification Message">
+    </md-input-container>
+  
+    <md-input-container class="full-width">
+      <input mdInput [(ngModel)]="timer" type="number" placeholder="Timer (in milliseconds)">
+    </md-input-container>
+  </md-card>
+  
+  <md-card>
+    <p>
+      Most items are pure css properties. This means you can change the color
+      for example by writing <code>red</code> <i>or</i> <code>#FF0000</code>.
+      Similarly you can change the position by <code>20px</code> <i>or</i> <code>5em</code>.
+    </p>
+    <md-input-container class="full-width">
+      <input mdInput [(ngModel)]="color" placeholder="color">
+    </md-input-container>
+  
+    <md-input-container class="full-width">
+      <input mdInput [(ngModel)]="background" placeholder="background">
+    </md-input-container>
+  </md-card>
+  
+  <md-card>
+    <p>
+      Material-design box-shadows are the default, but you can easily turn them off.
+    </p>
+    <md-checkbox [(ngModel)]="withShadow" type="checkbox">
+      Display a material-design box-shadow?
+    </md-checkbox>
+  </md-card>
+  
+  <md-card>
+    <p>
+      The position element is determined by the position attributes. Again, it's just css
+      on a <code>position: fixed</code> notification element.
+    </p>
+    <md-input-container class="half-width">
+      <input mdInput type="number" [(ngModel)]="position.bottom" placeholder="bottom" />
+    </md-input-container>
+    <md-input-container class="half-width">
+      <input mdInput type="number" [(ngModel)]="position.left" placeholder="left" />
+    </md-input-container>
+    <md-input-container class="half-width">
+      <input mdInput type="number" [(ngModel)]="position.top" placeholder="top" />
+    </md-input-container>
+    <md-input-container class="half-width">
+      <input mdInput type="number" [(ngModel)]="position.right" placeholder="right" />
+    </md-input-container>
+  </md-card>
+  
+  <md-card>
 
-<div>
-  <input type="text" [(ngModel)]="message" placeholder="message" />
-</div>
-<div>
-  <input type="text" [(ngModel)]="timer" placeholder="timer (in milliseconds)" />
-</div>
+    <p>
+      Finally, generate the notification!
+    </p>
+    
+    <button md-raised-button color="primary" (click)="notify()"> Click to generate success notification </button>
+    <button md-raised-button color="accent" (click)="notify('error')"> Click to generate error notification </button>
+    
+  </md-card>
 
-<p>
-  All items are pure css properties. This means you can change the color
-  for example by wring <code>red</code> <i>or</i> <code>#FF0000</code>.
-  Similarly you can change the position by <code>20px</code> <i>or</i> <code>5em</code>.
-</p>
+  
 
-<div>
-  <input type="text" [(ngModel)]="color" placeholder="color" />
-</div>
-<div>
-  <input type="text" [(ngModel)]="background" placeholder="background" />
-</div>
-
-
-<label>
-Display a box-shadow: 
-<input [(ngModel)]="withShadow" type="checkbox"/>
-</label>
-
-
-<h3>Position</h3>
-<div>
-  <input type="text" [(ngModel)]="position.bottom" placeholder="bottom" />
-</div>
-<div>
-  <input type="text" [(ngModel)]="position.left" placeholder="left" />
-</div>
-<div>
-  <input type="text" [(ngModel)]="position.top" placeholder="top" />
-</div>
-<div>
-  <input type="text" [(ngModel)]="position.right" placeholder="right" />
-</div>
-
-<button (click)="notify()"> Click to generate success notification </button>
-<button (click)="notify('error')"> Click to generate error notification </button>
-
+</main>
