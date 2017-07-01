@@ -1,3 +1,4 @@
+
 Simple, yet flexible notifications for **Angular2 or greater**.
 Why yet another notification library?
 I found them either too complex or too simplistic and strive for a good balance here.

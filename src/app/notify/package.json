@@ -1,6 +1,6 @@
 {
   "name": "notify-angular",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "Simple yet customizable notifications for Angular2+, well suited in combination with Material Design",
   "main": "index.js",
   "scripts": {
