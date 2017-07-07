@@ -14,7 +14,7 @@ import 'rxjs/add/operator/delay';
 @Component({
   selector: 'notify',
   templateUrl: './notify.component.html',
-  styleUrls: ['./notify.component.scss']
+  styleUrls: ['./notify.component.css']
 })
 export class NotifyComponent implements OnInit, OnDestroy {
 
