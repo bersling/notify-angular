@@ -14,7 +14,7 @@ export class NotifyService {
 
   constructor() {}
 
-  defaultNotificationFactory (message, options?: NotifyOptions): AppNotification {
+  defaultNotificationFactory (message: string, options?: NotifyOptions): AppNotification {
     const notification: AppNotification = {
       message: message,
       withShadow: options && options.withShadow !== undefined ? options.withShadow : true,
@@ -27,12 +27,12 @@ export class NotifyService {
     return notification
   }
 
-  success(message, options?: NotifyOptions) {
+  success(message: string, options?: NotifyOptions) {
     const notification = this.defaultNotificationFactory(message, options);
     this._notifications.next(notification);
   }
 
-  error(message, options?: NotifyOptions) {
+  error(message: string, options?: NotifyOptions) {
     const notification = this.defaultNotificationFactory(message, options);
     notification.type = 'error';
     notification.color = options && options.color || '#A94442';

@@ -7,6 +7,7 @@ import 'rxjs/add/operator/takeUntil';
 import 'rxjs/add/observable/timer';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/delay';
+import {Subscription} from 'rxjs/Subscription';
 
 @Component({
   selector: 'notify',
@@ -18,7 +19,7 @@ export class NotifyComponent implements OnInit, OnDestroy {
   public notification: AppNotification;
   private onDestroyStarted: Subject<void> = new Subject<void>();
   public hidden: boolean;
-  private removalSubscription;
+  private removalSubscription: Subscription;
 
   constructor(
     private notifyService: NotifyService
