@@ -1,6 +1,11 @@
-export interface AppNotification extends NotifyOptions {
-  type?: NotificationType;
-  message?: string;
+export interface AppNotification {
+  type: NotificationType;
+  message: string;
+  timer: number; // in milliseconds
+  withShadow: boolean;
+  color: string; // css color property
+  background: string; // css background property
+  position: NotificationPosition;
 }
 
 export interface NotifyOptions {

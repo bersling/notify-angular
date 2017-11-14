@@ -26,7 +26,7 @@ export class AppComponent {
   ) { }
 
   notify(type?: string) {
-    const options: AppNotification = {
+    const options: NotifyOptions = {
       color: this.color,
       background: this.background,
       position: this.position,

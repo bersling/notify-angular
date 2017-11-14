@@ -3,11 +3,8 @@ import {NotifyService} from '../notify.service';
 import {AppNotification} from '../notify.model';
 import {Observable} from 'rxjs/Observable';
 import {Subject} from 'rxjs/Subject';
-import {Scheduler} from 'rxjs/Scheduler';
 import 'rxjs/add/operator/takeUntil';
 import 'rxjs/add/observable/timer';
-
-
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/delay';
 
@@ -20,7 +17,7 @@ export class NotifyComponent implements OnInit, OnDestroy {
 
   public notification: AppNotification;
   private onDestroyStarted: Subject<void> = new Subject<void>();
-  public hidden;
+  public hidden: boolean;
   private removalSubscription;
 
   constructor(
