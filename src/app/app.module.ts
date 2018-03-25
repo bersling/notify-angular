@@ -6,7 +6,7 @@ import {FormsModule} from '@angular/forms';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {MdButtonModule, MdCheckboxModule, MdInputModule, MdCardModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatInputModule, MatCardModule} from '@angular/material';
 
 import 'hammerjs';
 
@@ -19,10 +19,10 @@ import 'hammerjs';
     BrowserAnimationsModule,
     FormsModule,
     NotifyModule.forRoot(),
-    MdButtonModule,
-    MdCheckboxModule,
-    MdInputModule,
-    MdCardModule
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

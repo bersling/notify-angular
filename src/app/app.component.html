@@ -2,89 +2,89 @@
 <notify></notify>
 <main style="max-width: 700px; margin: 0 auto; padding: 50px 0;">
   
-  <md-card>
+  <mat-card>
     <h1>
       notifiy-angular
     </h1>
-  </md-card>
-  <md-card>
+  </mat-card>
+  <mat-card>
     <p>
       Simple, yet flexible notifications for Angular2. Why yet another notification library?
       I found them either too complex or too simplistic and strive for a good balance here.
       Additionally, it fits in well with <b>Angular Material Design</b>, but is still independent from the
       material design library!
     </p>
-  </md-card>
+  </mat-card>
   
-  <md-card>
+  <mat-card>
   
     <p>
       Simply choose a message to be displayed. The timer (aka delay) determines how long the message
       will stay on screen.
     </p>
     
-    <md-input-container class="full-width">
-      <input mdInput [(ngModel)]="message" placeholder="Notification Message">
-    </md-input-container>
+    <mat-input-container class="full-width">
+      <input matInput [(ngModel)]="message" placeholder="Notification Message">
+    </mat-input-container>
   
-    <md-input-container class="full-width">
-      <input mdInput [(ngModel)]="timer" type="number" placeholder="Timer (in milliseconds)">
-    </md-input-container>
-  </md-card>
+    <mat-input-container class="full-width">
+      <input matInput [(ngModel)]="timer" type="number" placeholder="Timer (in milliseconds)">
+    </mat-input-container>
+  </mat-card>
   
-  <md-card>
+  <mat-card>
     <p>
       Most items are pure css properties. This means you can change the color
       for example by writing <code>red</code> <i>or</i> <code>#FF0000</code>.
       Similarly you can change the position by <code>20px</code> <i>or</i> <code>5em</code>.
     </p>
-    <md-input-container class="full-width">
-      <input mdInput [(ngModel)]="color" placeholder="color">
-    </md-input-container>
+    <mat-input-container class="full-width">
+      <input matInput [(ngModel)]="color" placeholder="color">
+    </mat-input-container>
   
-    <md-input-container class="full-width">
-      <input mdInput [(ngModel)]="background" placeholder="background">
-    </md-input-container>
-  </md-card>
+    <mat-input-container class="full-width">
+      <input matInput [(ngModel)]="background" placeholder="background">
+    </mat-input-container>
+  </mat-card>
   
-  <md-card>
+  <mat-card>
     <p>
       Material-design box-shadows are the default, but you can easily turn them off.
     </p>
-    <md-checkbox [(ngModel)]="withShadow" type="checkbox">
+    <mat-checkbox [(ngModel)]="withShadow" type="checkbox">
       Display a material-design box-shadow?
-    </md-checkbox>
-  </md-card>
+    </mat-checkbox>
+  </mat-card>
   
-  <md-card>
+  <mat-card>
     <p>
       The position element is determined by the position attributes. Again, it's just css
       on a <code>position: fixed</code> notification element.
     </p>
-    <md-input-container class="half-width">
-      <input mdInput type="number" [(ngModel)]="position.bottom" placeholder="bottom" />
-    </md-input-container>
-    <md-input-container class="half-width">
-      <input mdInput type="number" [(ngModel)]="position.left" placeholder="left" />
-    </md-input-container>
-    <md-input-container class="half-width">
-      <input mdInput type="number" [(ngModel)]="position.top" placeholder="top" />
-    </md-input-container>
-    <md-input-container class="half-width">
-      <input mdInput type="number" [(ngModel)]="position.right" placeholder="right" />
-    </md-input-container>
-  </md-card>
+    <mat-input-container class="half-width">
+      <input matInput type="number" [(ngModel)]="position.bottom" placeholder="bottom" />
+    </mat-input-container>
+    <mat-input-container class="half-width">
+      <input matInput type="number" [(ngModel)]="position.left" placeholder="left" />
+    </mat-input-container>
+    <mat-input-container class="half-width">
+      <input matInput type="number" [(ngModel)]="position.top" placeholder="top" />
+    </mat-input-container>
+    <mat-input-container class="half-width">
+      <input matInput type="number" [(ngModel)]="position.right" placeholder="right" />
+    </mat-input-container>
+  </mat-card>
   
-  <md-card>
+  <mat-card>
 
     <p>
       Finally, generate the notification!
     </p>
     
-    <button style="margin:5px;" md-raised-button color="primary" (click)="notify()"> Generate success notification </button>
-    <button style="margin:5px;" md-raised-button color="accent" (click)="notify('error')"> Generate error notification </button>
+    <button style="margin:5px;" mat-raised-button color="primary" (click)="notify()"> Generate success notification </button>
+    <button style="margin:5px;" mat-raised-button color="accent" (click)="notify('error')"> Generate error notification </button>
     
-  </md-card>
+  </mat-card>
 
   
 
