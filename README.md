@@ -1,3 +1,5 @@
+Deprecated in favor of tsmean/toast
+
 # notify-angular
 
 ![notify-angular library demo](http://notify.tsmean.com/notify-angular2.gif)
