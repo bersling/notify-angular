@@ -1,4 +1,4 @@
-Deprecated in favor of tsmean/toast
+!!! Deprecated in favor of tsmean/toast !!!
 
 # notify-angular
 
